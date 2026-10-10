@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksperimen & Tugas Praktikum 3</title>
+    <link rel="stylesheet" href="style_eksternal.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7f8;
+            color: #333;
+        }
+
+        header {
+            background: white;
+            padding: 25px 6px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 32px auto;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+
+        .card h2 {
+            color: #10279b;
+            font-size: 23px;
+            border-bottom: 3px solid #20a759;
+            padding-bottom: 12px;
+            margin-top: 0;
+        }
+
+        .data-mahasiswa {
+            line-height: 1.7;
+        }
+
+        .eksperimen {
+            background: #eef5f9;
+            border: 1px solid #b9d8ed;
+            border-radius: 6px;
+            padding: 20px;
+            line-height: 1.6;
+            letter-spacing: 0.2px;
+        }
+
+        .tombol-eksperimen {
+            display: inline-block;
+            background: #111b9e;
+            color: white;
+            padding: 10px 24px;
+            margin-top: 8px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .tombol-eksperimen:hover {
+            background: #20a759;
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                width: 92%;
+            }
+
+            .card {
+                padding: 18px;
+            }
+
+            header h1 {
+                font-size: 27px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Eksperimen &amp; Tugas <i>Praktikum 3</i></h1>
+    </header>
+
+    <nav>
+        <a href="lab2_css_dasar.html">CSS Dasar</a>
+        <a href="lab2_css_dasar.html">CSS Eksternal</a>
+        <a class="active" href="lab2_css_eksperimen.html">
+            Eksperimen &amp; Tugas
+        </a>
+    </nav>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>Data Mahasiswa</h2>
+
+            <div class="data-mahasiswa">
+                <strong>Nama:</strong> Anggun Kusuma Wardani
+                &nbsp; | &nbsp;
+                <strong>NIM:</strong> 312510045
+                &nbsp; | &nbsp;
+                <strong>Kelas:</strong> I253A
+                <br>
+
+                <strong>Mata Kuliah:</strong> Pemrograman Web
+                &nbsp; | &nbsp;
+                <strong>Dosen:</strong> Agung Nugroho, S.Kom., M.Kom.
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>1. Eksperimen Properti CSS (CSS Cheat Sheet)</h2>
+
+            <p>
+                Eksperimen penambahan properti CSS seperti
+                <code>line-height</code>,
+                <code>letter-spacing</code>,
+                <code>border-radius</code>, serta efek tombol
+                saat kursor diarahkan (<code>:hover</code>):
+            </p>
+
+            <div class="eksperimen">
+                <p>
+                    <strong>Contoh Paragraf Eksperimen:</strong>
+                    Paragraf ini menerapkan pengaturan jarak antarbaris
+                    (line-height: 1.6), jarak huruf (letter-spacing),
+                    sudut membulat (border-radius: 6px), dan latar
+                    belakang warna lembut (#eef5f9).
+                </p>
+
+                <a class="tombol-eksperimen" href="#eksperimen">
+                    Tombol Uji Eksperimen
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
