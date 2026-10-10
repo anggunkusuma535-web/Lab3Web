@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Eksternal</title>
+
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style_eksternal.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        header {
+            min-height: 80px;
+            border-bottom: 1px solid #77CCEF;
+        }
+
+        header h1 {
+            font-size: 24px;
+            color: #0F189F;
+            text-align: center;
+            padding: 20px 10px;
+            margin: 0;
+        }
+
+        header h1 i {
+            color: #6d6a6b;
+        }
+
+        #intro {
+            background: #418fb1;
+            border: 1px solid #099249;
+            min-height: 100px;
+            padding: 10px;
+            margin-top: 0;
+        }
+
+        #intro h2 {
+            text-align: left;
+            border: 0;
+            color: #fff;
+        }
+
+        #intro p {
+            text-align: center;
+            color: #ccd8e4;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Eksternal dan <i>Internal CSS</i></h1>
+    </header>
+
+    <nav>
+        <a href="lab2_css_dasar.html">CSS Dasar</a>
+        <a class="active" href="lab2_css_eksternal.html">CSS Eksternal</a>
+        <a href="lab2_css_dasar.html">HTML Dasar</a>
+    </nav>
+
+    <main id="intro">
+        <h2>Hello World</h2>
+
+        <p>
+            Kami sedang belajar HTML dan CSS dasar, pada mata kuliah
+            <b>Pemrograman Web</b> di
+            <i>Universitas Pelita Bangsa</i>. Pelajaran pertama yang kami
+            dapat adalah membuat tampilan web sederhana dalam rangka
+            mengenal tag-tag dasar HTML dan CSS.
+        </p>
+
+        <a class="button btn-primary" href="#intro">
+            Informasi selengkapnya.
+        </a>
+    </main>
+</body>
+</html>
